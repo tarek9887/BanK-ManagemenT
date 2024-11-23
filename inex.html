@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+</head>
+<style>
+      body
+      {
+      font-family: 'Croissant One', cursive;
+      color: #333;
+      }
+</style>
+<body class="main bg-slate-100 min-h-screen overflow-hidden">
+      <div class="bg-white-200 mt-6  bg-slate-200 m-auto h-[50px] text-center justify-center">
+            <h2 class="text-5xl bg-center">Welcome To Baap er Bank</h2>
+      </div>
+      <div class="flex flex-row justify-around mt-12 m-auto">
+            <div class="h-[150px] shadow-2xl flex flex-col w-[320px] items-center text-4xl  p-8 justify-center text-center bg-orange-400 rounded-xl">
+                  <h3 class="mb-2">deposit</h3>
+                  <p>$ <span id="dep">0.00</span></p>
+            </div>
+
+            <div class="h-[150px] shadow-2xl flex flex-col w-[320px] items-center text-4xl  p-8 justify-center text-center bg-green-500 rounded-xl">
+                  <h3 class="mb-2">Withdraw</h3>
+                  <p>$ <span id="with">0.00</span></p>
+            </div>
+
+            <div class="h-[150px] shadow-2xl flex flex-col w-[320px] items-center text-4xl  p-8 justify-center text-center bg-sky-500 rounded-xl">
+                  <h3 class="mb-2">Balance</h3>
+                  <p>$ <span id="bal">0.00</span></p>
+            </div>
+      </div>
+
+      <div class="flex justify-center items-center gap-10 mt-4">
+            <div class="w-[500px] shadow-2xl h-[280px] bg-green-500 flex flex-col items-start mt-10  justify-center p-8 rounded-xl gap-8">
+                  <h1 class="text-4xl">Please Deposit</h1>
+                  <input id="depInput" type="number" max="1000000"
+                  min="00" step="100" placeholder="$ Amouunt youi want to Deposit" class="p-2 w-full rounded-xl ">
+                  <button id="depbtn"  class="bg-yellow-500 btn px-4 py-2 rounded-xl hover:bg-yellow-600">Deposit</button>
+              </div>
+
+              <div class="w-[500px] shadow-2xl h-[280px] bg-blue-500 flex flex-col items-start mt-10  justify-center p-8 rounded-xl gap-8">
+                  <h1 class="text-4xl">Please Withdraw</h1>
+                  <input id="withInput" type="number" placeholder="$ Amount you want to Withdraw" class="p-2 w-full rounded-xl ">
+                  <button id="withbtn"  class="bg-yellow-500 btn px-4 py-2 rounded-xl hover:bg-yellow-600">Withdraw</button>
+              </div>
+      </div>
+      <script src="index.js"></script>
+</body>
+</html>
